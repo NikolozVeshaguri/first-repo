@@ -1,0 +1,87 @@
+img{
+    display: block;
+    width: 55px;
+    height: 55px;
+}
+h1{
+    font-size: 40px;
+    color: rgb(56, 152, 241);
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+}
+h2{
+font-size: 15px;
+color: hotpink;
+font-family: 'Playfair Display', serif;
+display: inline;
+}
+
+.first-box{
+    margin: auto;
+    transform: rotate(0deg);
+    transition: 2s;
+    
+
+}
+.first-box:hover{
+    margin: auto;
+    transform: rotate(360deg);
+    /* width: 200px;
+    height: 200px; */
+    transition: 2s;
+}
+.second-box  {
+    transition: 3s;
+    
+    animation-name: animate;
+animation-duration: 4s;
+animation-delay: 1s;
+animation-iteration-count: infinite;
+animation-timing-function: ease;
+animation-direction: reverse;
+display: inline-flex;
+
+
+}
+@keyframes animate{
+    
+    0%{
+            color: blueviolet;
+            transform: translate(0,0);
+    }
+    50%{
+        color: forestgreen;
+        transform: translate(100px,0);
+    }
+    100%{
+        color: gold;
+        transform: translate(0,0);
+    }
+    
+}
+h3{
+    
+    margin-left: 200px;
+    animation-name: animate2;
+animation-duration: 2.5s;
+animation-delay: 0.5s;
+animation-iteration-count: infinite;
+animation-timing-function: ease;
+animation-direction: reverse;
+display: inline-flex;
+}
+@keyframes animate2{
+    
+    0%{
+            color: blueviolet;
+            transform: translate(0,0);
+    }
+    50%{
+        color: forestgreen;
+        transform: translate(-100px,0);
+    }
+    100%{
+        color: gold;
+        transform: translate(0px,0);
+    }
+}
